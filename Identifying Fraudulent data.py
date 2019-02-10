@@ -150,7 +150,7 @@ w3=tf.Variable(tf.truncated_normal([N_hidden_2,N_hidden_3], stddev=0.1))
 b3=tf.Variable(tf.constant(0.1, shape=[N_hidden_3]))
 layer3=tf.nn.sigmoid(tf.matmul(layer2,w3)+b3)
 
-# Layer 4
+# Output layer
 w4=tf.Variable(tf.truncated_normal([N_hidden_3,2], stddev=0.1))
 b4=tf.Variable(tf.constant(0.1, shape=[2]))
 
